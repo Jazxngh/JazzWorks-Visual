@@ -454,3 +454,75 @@ a.Portfolio-Box { /*To remove link effect*/
   border-right: 15px solid #7393B3;
   left:-22px;
 }
+
+.JWVServiceSection2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  border: 1px solid #111111;
+  padding: 60px 20px;
+  margin-bottom: 45px;
+  animation: fade 1.5s ease-in-out;
+
+  animation: fade ease-in;
+  animation-timeline:view();
+}
+
+.ServiceOfferText
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.JWVServiceInfo {
+  max-width: 950px;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  animation: fade 1.2s ease-in-out;
+}
+
+.BoxedServiceSection
+{
+  border: 1px solid white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ServiceQuoter
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.ServiceQuoter2
+{
+  display: flex;
+  justify-content: center;
+}
+
+.JWVContactMeSection
+{
+  Display: flex;
+  justify-content: center;
+}
+
+#JWVContactMeBtn
+{
+  margin-top: 25px;
+  padding: 8px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JWVContactMeSection button:hover
+{
+  background-color: #4475a6;
+  transition: 0.45s ease-in;;
+}
