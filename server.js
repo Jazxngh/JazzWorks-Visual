@@ -1,16 +1,22 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const path = require('path');
+
 const app = express();
 const PORT = 3000;
 
+// Serve static files from the public directory
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public')); 
-//The beauty of this middleware is that this tells express, "use this as the root setup to run static stuff"
-//Meaning you DON'T need to public/image/xxx.jpg or public/style/desktop.css etc
+// Serve Contacts.html directly
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Contacts.html'));
+});
 
-// POST route for form submitting
+// Handle POST form submission
 app.post('/send', (req, res) => {
   const { first, last, email, message } = req.body;
   const fullName = `${first} ${last}`;
@@ -19,8 +25,7 @@ app.post('/send', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'singhjaspinder528@gmail.com',
-      pass: 'fuse zvur wpae fkpz' 
-      //My Gmail & app password ... for security, app password temporary one time, if necessary can regenerate a new one in google account
+      pass: 'fuse zvur wpae fkpz'
     }
   });
 
@@ -33,18 +38,15 @@ app.post('/send', (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error(error);
-      res.send('error');
+      console.log(error);
+      res.status(500).send('Error');
     } else {
-      console.log('Email successfully sent: ' + info.response);
-      res.send('success');
+      console.log('Email sent: ' + info.response);
+      res.send('Success');
     }
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server started on http://localhost:${PORT}`);
 });
-
-
-
