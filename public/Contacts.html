@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacts </title>
+    <link rel="stylesheet" href="/Styles/Desktop.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+
+    <header>
+    <div class="JWVHeaderContainer">
+      <div class="JWVHeaderImgSection">
+        <img src="Images/Banner.png" width="100" height="auto" alt="Logo">
+      </div>
+      <div class="HeaderDetailSection">
+        <nav class="JW-NavBar">
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<h1 class ="JWVContactHeading"> JazzWorks Visual Contact Form </h1>
+
+<form action ="/send" method="POST">
+<input type ="text" name = "first" placeholder="First Name" autocomplete="off" required>
+<input type ="text" name = "last" placeholder="Last Name" autocomplete="off" required>
+
+<input type ="email" name = "email" placeholder="Email Address" autocomplete="off" required>
+<textarea row ="5" cols="60" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
+
+<button type="submit"> Send </button>
+</form>
+
+
+</body>
+</html>
