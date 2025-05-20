@@ -19,7 +19,7 @@ app.post('/send', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'singhjaspinder528@gmail.com',
-      pass: 'qvwm uzco sxhi zqpk' 
+      pass: 'fuse zvur wpae fkpz' 
       //My Gmail & app password ... for security, app password temporary one time, if necessary can regenerate a new one in google account
     }
   });
