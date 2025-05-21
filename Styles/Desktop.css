@@ -605,3 +605,23 @@ button:hover {
 
   animation: fade 1.5s ease-in-out;
 }
+
+/*Lightbox & cdnjs ===============================*/
+
+.JWV-Gallery-Container
+{
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  margin: 32px auto;
+
+  animation: fade 1.2s ease-in-out;
+}
+
+.JWV-Gallery-Container img 
+{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

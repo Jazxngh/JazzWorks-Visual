@@ -29,11 +29,13 @@
 
 <h1 class ="JWVContactHeading"> JazzWorks Visual Contact Form </h1>
 
-<form>
-  <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
-  <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
-  <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
-  <textarea rows="5" cols="60" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
+<form action="https://formspree.io/f/mpwdezep" method ="POST"> 
+  <!--Since this is a personal project, I wanted to delve into using the world of web apis and wanted to try formspree-->
+
+  <input type="text" name="First Name" placeholder="First Name" autocomplete="off" required>
+  <input type="text" name="Last Name" placeholder="Last Name" autocomplete="off" required>
+  <input type="email" name="User Email" placeholder="Email Address" autocomplete="off" required>
+  <textarea rows="5" cols="60" name="Their Message" placeholder="Enter your message" autocomplete="off" required></textarea>
   <button type="submit">Send</button>
 </form>
 
