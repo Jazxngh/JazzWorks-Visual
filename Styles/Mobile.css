@@ -41,11 +41,18 @@
     align-items: center;
     padding: 15px 40px;
     background-color: #111;
+    flex-direction: column;
+    
   }
   
   .JWVHeaderImgSection img {
     max-width: 100px;
     height: auto;
+  }
+  
+  .JW-NavBar
+  {
+    margin-top: 15px;
   }
   
   .JW-NavBar ul {
@@ -207,9 +214,6 @@
   background-color: #000000;
   padding: 60px 20px;
   animation: fade 1.2s ease-in-out;
-
-  animation: fade ease-in;
-  animation-timeline:view();
 }
 
 .Portfolio-Box
@@ -258,12 +262,11 @@ a.Portfolio-Box { /*To remove link effect*/
     border-radius: 8px;
 
     animation: fade linear;
-    animation-timeline:view();
 }
 
 .JWVImgSlider
 {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: row; /*Important to add this as mobile is column otherwise it'll apply to desktop too*/
     animation: slide 16s infinite;
