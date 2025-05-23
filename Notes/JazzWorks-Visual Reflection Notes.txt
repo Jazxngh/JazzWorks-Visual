@@ -1,0 +1,32 @@
+
+==========================================================================================================================================
+
+What I have learnt from producing my photography web application (Side Project):
+
+-> Used BG video with overlay
+-> when upload video, no 60fps, practise effiecent resolution and lower frames at 24fps to 30fps with higher MBPS
+-> To clean up the text readability, can <p> then <hr> then <p> again with some breaks if you need to...
+
+==========================================================================================================================================
+
+Learnt how to do publish websites:
+-> Buy Domain from NameCheap, etc 
+-> Set A records in Namecheap to Github Pages IPs
+-> Set CName Record pointing www to Jazxngh.github.io
+-> Added CNAME file in Repo with Domain name
+-> Enable Github pages under repo setting pointed to main/root 
+-> Waited for DNS to propagate successfully and enforce http by ticking
+
+-> Success!!! But index.html should be index.html and not Index.html...
+
+==========================================================================================================================================
+
+But yeah thats how it works if they fully rely on you, not accurate lol
+
+Buy domain, host it under my name, and sort out all DNS and CNAME record
+(this will get me in full control of everything as a web developer)
+
+Which Im guessing they pay set up, domain and maintainece fees...
+But this is irrelevant for now as a first year....
+
+==========================================================================================================================================
