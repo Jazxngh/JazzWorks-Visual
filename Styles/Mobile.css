@@ -10,6 +10,11 @@
     color: white;
   }
 
+  p
+  {
+    padding: 15px;
+  }
+  
   .HR-Container
   {
     Display: flex;
@@ -47,6 +52,7 @@
     list-style: none;
     display: flex;
     gap: 30px;
+    flex-direction: column;
   }
   
   .JW-NavBar a {
@@ -320,6 +326,7 @@ a.Portfolio-Box { /*To remove link effect*/
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 15px;
 
   animation: fade 1.2s ease-in-out;
 }
@@ -366,7 +373,7 @@ a.Portfolio-Box { /*To remove link effect*/
 
 .JWV-Tcontainer
 {
-  padding: 10px 50px;
+  padding: 20px;
   position: relative;
   width: 50%;
   background: rgba(0, 0, 0 ,0.3);
@@ -374,11 +381,11 @@ a.Portfolio-Box { /*To remove link effect*/
 
 .t-textbox
 {
-  padding: 20px 30px;
+  padding: 10px;
   background: #7393B3;
   position: relative;
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .left-container
@@ -532,7 +539,7 @@ a.Portfolio-Box { /*To remove link effect*/
   color: white;
   padding-top: 10px;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 50px;
   margin-top: 50px;
 

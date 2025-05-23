@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JazzWorks Visuals</title>
-  <link rel="stylesheet" href="/Styles/Desktop.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="/Styles/Desktop.css"> <!-- Always loads -->
+  <link rel="stylesheet" href="/Styles/Mobile.css" media="screen and (max-width: 768px)">
 </head>
+
 <body>
 
   <header>
@@ -26,6 +28,8 @@
       </div>
     </div>
   </header>
+
+
 
   <section class="JWV-Hero">
     <video autoplay muted loop playsinline class="hero-video" id="JWV-BG-Video">
