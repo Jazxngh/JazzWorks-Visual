@@ -542,8 +542,8 @@ a.Portfolio-Box { /*To remove link effect*/
 input
 {
   background-color: #fff;
-  width: 70%;
-  margin-left:16%;
+  width: 60%;
+  margin-left:20%;
   font-size: 20px;
   padding: 16px 16px;
   border-radius: 10px;
@@ -556,8 +556,8 @@ input
 textarea
 {
   background-color: white;
-  width: 70%;
-  margin-left:16%;
+  width: 60%;
+  margin-left:20%;
   font-size: 20px;
   padding: 16px 16px;
   border-radius: 10px;
