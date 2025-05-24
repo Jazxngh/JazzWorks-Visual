@@ -623,6 +623,7 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .JWV-Gallery-Container
@@ -632,6 +633,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8px;
   margin: 32px auto;
+  padding: 12px; /*To give breathing space between image tiles since mobile is smaller*/
 
   animation: fade 1.2s ease-in-out;
 }
