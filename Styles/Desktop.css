@@ -622,6 +622,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8px;
   margin: 32px auto;
+  margin-bottom: 20px;
 
   animation: fade 1.2s ease-in-out;
 }
