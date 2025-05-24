@@ -48,6 +48,7 @@
   .JWVHeaderImgSection img {
     max-width: 100px;
     height: auto;
+    margin-bottom: 2.5px;
   }
   
   .JW-NavBar
