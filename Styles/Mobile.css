@@ -59,7 +59,7 @@
   .JW-NavBar ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 42px;
     flex-direction: row;
   }
   
@@ -165,7 +165,7 @@
   }
   
   .PhotoBox {
-    width: 150px;
+    width: 200px;
     transition: transform 0.6s ease-in-out;
     animation: fade 1.2s ease-in-out;
     will-change: transform;
@@ -223,7 +223,6 @@
     color: #aaa;
   }
   
-/*Light Mode*/
 
 .Porfolio-Container
 {
@@ -234,6 +233,7 @@
   background-color: #000000;
   padding: 60px 20px;
   animation: fade 1.2s ease-in-out;
+  margin-bottom: 50px;
 }
 
 .Portfolio-Box
@@ -275,6 +275,10 @@ a.Portfolio-Box { /*To remove link effect*/
   color: inherit;
 }
 
+.QuoteHeading
+{
+  padding: 0px;
+}
 .JWVImgSliderSection
 {
     margin-top: 75px;
@@ -400,12 +404,13 @@ a.Portfolio-Box { /*To remove link effect*/
   position: relative;
   width: 50%;
   background: rgba(0, 0, 0 ,0.3);
+  
 }
 
 .t-textbox
 {
   padding: 10px;
-  background: #7393B3;
+  background: #1b6ab9;
   position: relative;
   border-radius: 6px;
   font-size: 10px;
@@ -441,7 +446,7 @@ a.Portfolio-Box { /*To remove link effect*/
   position: absolute;
   width: 6px;
   height: 100%;
-  background:#7393B3;
+  background:#1b6ab9;
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -468,7 +473,7 @@ a.Portfolio-Box { /*To remove link effect*/
   z-index: 1;
   border-top: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-right: 15px solid #7393B3;
+  border-right: 15px solid #1b6ab9;
   right:-22px;
 }
 
@@ -481,7 +486,7 @@ a.Portfolio-Box { /*To remove link effect*/
   z-index: 1;
   border-top: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-right: 15px solid #7393B3;
+  border-right: 15px solid #1b6ab9;
   left:-22px;
 }
 
@@ -615,8 +620,17 @@ textarea:focus-within
   animation: fade 1.5s ease-in-out;
 }
 
+/*To fix the silly inconsistent font style*/
+input::placeholder,
+textarea::placeholder 
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Keeps font style same as parent*/
+  font-size: 20px; /*Just to be safe on size consistency*/
+}
+
+
 button {
-  background-color:#7393B3;
+  background-color:#1b6ab9;
   color: #fff;
   border-radius: 20px;
   border-color: black;

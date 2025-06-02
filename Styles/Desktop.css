@@ -438,7 +438,7 @@ a.Portfolio-Box { /*To remove link effect*/
   position: absolute;
   width: 6px;
   height: 100%;
-  background:#7393B3;
+  background:#1b6ab9;
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -610,6 +610,14 @@ textarea:focus-within
   border-width: 3px;
 
   animation: fade 1.5s ease-in-out;
+}
+
+/*To fix the silly inconsistent font style*/
+input::placeholder,
+textarea::placeholder 
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Keeps font style same as parent*/
+  font-size: 20px; /*Just to be safe on size consistency*/
 }
 
 button {
