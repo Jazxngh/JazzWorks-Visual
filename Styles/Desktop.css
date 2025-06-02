@@ -60,6 +60,20 @@
     transition: 0.3s ease-in-out;
     text-decoration: underline;
   }
+
+/*Desktop only*/
+
+/*On Mobile shows icons, desktop text*/
+
+.JW-NavBar .material-symbols-outlined {
+  display: none; /*hide icons*/
+}
+
+.JW-NavBar a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
   
   /* BG hero video Section =================================================================================================================*/
   .JWV-Hero {

@@ -60,7 +60,7 @@
     list-style: none;
     display: flex;
     gap: 30px;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .JW-NavBar a {
@@ -74,6 +74,25 @@
     transition: 0.3s ease-in-out;
     text-decoration: underline;
   }
+
+/*Mobile exclusive*/
+
+/*On Mobile shows icons, desktop text*/
+
+/*show icons*/
+.JW-NavBar .material-symbols-outlined {
+  display: inline;
+  font-size: 28px;
+}
+
+.JW-NavBar .material-symbols-outlined {
+  display: inline;
+  font-size: 28px;
+}
+
+.JW-NavBar a {
+  font-size: 0; /*Removes text*/
+}
   
   /* BG hero video Section =================================================================================================================*/
   .JWV-Hero {
