@@ -165,7 +165,7 @@
   }
   
   .PhotoBox {
-    width: 250px;
+    width: 175px;
     transition: transform 0.6s ease-in-out;
     animation: fade 1.2s ease-in-out;
     will-change: transform;
