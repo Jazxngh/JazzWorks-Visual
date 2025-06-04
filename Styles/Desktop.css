@@ -501,7 +501,14 @@ a.Portfolio-Box { /*To remove link effect*/
 {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 28px;
+}
+
+.SOT-p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .JWVServiceInfo {
