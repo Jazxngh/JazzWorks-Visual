@@ -275,10 +275,6 @@ a.Portfolio-Box { /*To remove link effect*/
   color: inherit;
 }
 
-.QuoteHeading
-{
-  padding: 0px;
-}
 .JWVImgSliderSection
 {
     margin-top: 75px;
@@ -292,8 +288,10 @@ a.Portfolio-Box { /*To remove link effect*/
 {
     width: 100%;
     display: flex;
-    flex-direction: row; /*Important to add this as mobile is column otherwise it'll apply to desktop too*/
-    animation: slide 16s infinite;
+    flex-direction: column; /*Important to add this as mobile is column otherwise it'll apply to desktop too*/
+    animation: slide 0s infinite;
+    align-items: center;
+    margin-bottom: 35px;
 
     /* //never have multiple keyframe identifiers in a class style */
     
@@ -302,9 +300,16 @@ a.Portfolio-Box { /*To remove link effect*/
 .JWVImgSlider img
 {
    width: 68%;
+   border-radius: 5px;
 
    animation: fade linear;
    animation-timeline:view();
+}
+
+.QuoteHeading
+{
+  margin:20px;
+  align-items: center;
 }
 
 @keyframes slide{ 
@@ -337,7 +342,6 @@ a.Portfolio-Box { /*To remove link effect*/
   animation: fade 1.2s ease-in-out;
 
   animation: fade ease-in;
-  animation-timeline:view();
 }
 
 .OwnerText2 {
@@ -386,6 +390,12 @@ a.Portfolio-Box { /*To remove link effect*/
 
   animation: fade ease-in;
   animation-timeline:view();
+}
+
+.VisionText p
+{
+  display: flex;
+  justify-content: center;
 }
 
 .JWVTimeline
@@ -502,7 +512,6 @@ a.Portfolio-Box { /*To remove link effect*/
   animation: fade 1.5s ease-in-out;
 
   animation: fade ease-in;
-  animation-timeline:view();
 }
 
 .ServiceOfferText
