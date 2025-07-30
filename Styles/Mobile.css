@@ -302,8 +302,8 @@ a.Portfolio-Box { /*To remove link effect*/
    width: 68%;
    border-radius: 5px;
 
-   animation: fade linear;
-   animation-timeline:view();
+  
+   animation: fade 1.2s ease-in-out;
 }
 
 .QuoteHeading
